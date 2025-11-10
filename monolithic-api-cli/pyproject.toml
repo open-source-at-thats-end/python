@@ -45,10 +45,10 @@ dev = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-q --cov=bfw_python_api_cli --cov-report=term-missing"
+addopts = "-q --cov=python_api_cli --cov-report=term-missing"
 
 [tool.poetry]
-name = "bfw_python_api_cli"
+name = "python_api_cli"
 version = "0.1.0"
 packages = [{ include = "src", from = "." }]
 
