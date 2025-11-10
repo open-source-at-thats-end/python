@@ -10,8 +10,8 @@ from libs.crud.entity import Entity, col_prefix, prefix_to_any_index, tablename
 if TYPE_CHECKING:
     from src.shared.api_endpoint_auth_file.entity import ApiEndpointAuthFileEntity
     
-ApiEndpointAuthTable: str = tablename("api_endpoint_auth")
-ApiEndpointAuthColPrefix: str = "aepu_"
+ApiEndpointAuthTable: str = tablename("")
+ApiEndpointAuthColPrefix: str = ""
 
 class ApiEndpointAuthEntity(Entity):
     # table and column prefix

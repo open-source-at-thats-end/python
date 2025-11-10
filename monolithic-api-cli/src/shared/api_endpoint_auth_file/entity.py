@@ -13,8 +13,8 @@ from src.shared.api_endpoint_auth.entity import ApiEndpointAuthEntity, ApiEndpoi
 if TYPE_CHECKING:
     from src.shared.api_endpoint_auth.entity import ApiEndpointAuthEntity
 
-ApiEndpointAuthFileTable: str = tablename("api_endpoint_auth_file")
-ApiEndpointAuthFileColPrefix: str = "aepuf_"
+ApiEndpointAuthFileTable: str = tablename("")
+ApiEndpointAuthFileColPrefix: str = ""
 
 class ApiEndpointAuthFileEntity(Entity):
     # table and column prefix
