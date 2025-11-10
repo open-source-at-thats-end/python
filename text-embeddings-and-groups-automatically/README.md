@@ -48,3 +48,29 @@ A small FastAPI app that:
     - optionally split clusters larger than MAX_SIZE via a quick 2-means on that cluster (only if that env var is set),
     - return { term, cluster_id } for every term, plus chosen_k and overall silhouette.
 4. GET /healthz returns {"status": "ok"}.
+
+
+---
+
+K-means is an unsupervised machine learning algorithm that groups a dataset into a specified number $k$) of clusters. It works by iteratively assigning data points to the nearest cluster centroid and recalculating the centroids until the clusters stabilize. This process is used for tasks like customer segmentation, fraud detection, and image analysis, but it requires you to pre-define the number of clusters, and its performance can be affected by the initial random selection of centroids.  
+How it works 
+
+• Initialization: The algorithm begins by randomly selecting $k$ data points as the initial centroids (cluster centers). 
+• Assignment: Each data point is assigned to the cluster with the closest centroid, based on a distance metric like Euclidean distance. 
+• Update: The position of each centroid is recalculated as the mean of all data points now assigned to that cluster. 
+• Iteration: Steps 2 and 3 are repeated until the centroids no longer move or a maximum number of iterations is reached, indicating the algorithm has converged.
+
+Key characteristics 
+
+• Unsupervised: K-means is an unsupervised learning method, meaning it works with unlabeled data to find hidden patterns. 
+• Iterative: The process is iterative, refining the clusters over several steps. 
+• Distance-based: It relies on calculating the distance between data points and centroids.
+• Requires $k$: You must specify the number of clusters $k$) before running the algorithm. A common method for determining the optimal $k$ is the elbow method, which analyzes the reduction in variance for different values of $k$. 
+
+Common uses 
+
+• Customer segmentation (e.g., segmenting customers into "budget," "frequent," or "big spender" groups) 
+• Anomaly detection 
+• Document clustering 
+• Image compression and segmentation 
+• Delivery route optimization
