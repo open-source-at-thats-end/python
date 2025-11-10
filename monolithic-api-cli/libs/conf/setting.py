@@ -93,15 +93,15 @@ class ConfSetting(BaseSettings):
     cdn_url: str = "/cdn"
     
     # --- Common secret, salt and iv ---
-    common_secret: str = ("AD2A9F143EB457C72059F5097E9BA07E41EB0F2F8B7CF2734283655BFA9FDD73")
-    common_salt: str = "37A6C7AFA29CAB98"
-    common_iv: str = "74D5350D1A4A49374FF38661F1064A9A"
+    common_secret: str = ("41EB0F2F8B7CF2734283655BFA9FDD73")
+    common_salt: str = "37A6C7"
+    common_iv: str = "74D5350D1A4A"
     
     # --- Stateful data storage ---
-    cookie_secret: str = ("7CDFE783DB8386303EF0989E575DBC9D75597B085325435E5B6B77540EB8F355")
-    session_secret: str = ("FCEC7E5412EF1A3CD267432A7231210658EE83BE591B424A5433D28F3897C53C")
-    session_salt: str = "2BABDD16DF09FB00"
-    session_iv: str = "47158B020333E996FD43B8FE7C1A5634"
+    cookie_secret: str = ("7CDFE783DBB085325435E5B6B77540EB8F355")
+    session_secret: str = ("FCEC7E5415433D28F3897C53C")
+    session_salt: str = "2BABDD16DF"
+    session_iv: str = "E996FD43B8FE7C1A5634"
     
     # --- Database ---
     mysql_host: str = "localhost"
@@ -144,8 +144,8 @@ class ConfSetting(BaseSettings):
     better_sqlite3_data_source: str = "/data-source/sqlite3.db"
     
     # --- JWT ---
-    jwt_accesstoken_secret: str = ("CD9995FB4B72CB0A20614F0F85DC29D4C47B9B987F7A0FB9FD88FE52811C6D8C")
-    jwt_refreshtoken_secret: str = ("3A237D96597B05C27C30F1E805DC258E7AD688BBEA4E1A52086DF4912FF9C919")
+    jwt_accesstoken_secret: str = ("D4C47B9B987F7A0FB9FD88FE52811C6D8C")
+    jwt_refreshtoken_secret: str = ("3A237D96597B05C27C3")
     jwt_issuer: str = "THATSEND"
     jwt_audience: str = "Application"
     jwt_accesstoken_payload_name: str = "access_token"
@@ -169,12 +169,12 @@ class ConfSetting(BaseSettings):
     
     # --- SMTP ---
     smtp_service: Optional[str] = None
-    smtp_host: str = "mail.thatsend.com"
+    smtp_host: str = "mail.google.com"
     smtp_port: int = 465
     smtp_secure: bool = True
-    smtp_user: str = "testsmtp@thatsend.com"
-    smtp_pass: str = "P*7HThMB@P*b"
-    smtp_from_email: str = "localrealestate@gmail.com"
+    smtp_user: str = "testsmtp@google.com"
+    smtp_pass: str = "xxx"
+    smtp_from_email: str = "local@gmail.com"
     
     # --- Data formats ---
     format_date_time: str = "d MMM yyyy hh:mm:ss aaa"
@@ -190,13 +190,13 @@ class ConfSetting(BaseSettings):
     img_thumb_file_extension: str = ".jpeg"
     
     # --- Database entity ---
-    entity_prefix: str = "te_"
+    entity_prefix: str = "x_"
     
     # --- Users ---
     masteruser_username: str = "admin"
-    masteruser_identify: str = "opwq@AK56"
+    masteruser_identify: str = "xxx"
     enduser_username: str = "enduser@domain.local"
-    enduser_identify: str = "opwq@AK56"
+    enduser_identify: str = "xxx"
     enduser_role: str = "USER"
 
     log_console_level: str = "TRACE"
