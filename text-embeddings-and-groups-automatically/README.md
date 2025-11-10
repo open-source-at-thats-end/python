@@ -53,6 +53,7 @@ A small FastAPI app that:
 ---
 
 K-means is an unsupervised machine learning algorithm that groups a dataset into a specified number $k$) of clusters. It works by iteratively assigning data points to the nearest cluster centroid and recalculating the centroids until the clusters stabilize. This process is used for tasks like customer segmentation, fraud detection, and image analysis, but it requires you to pre-define the number of clusters, and its performance can be affected by the initial random selection of centroids.  
+
 How it works 
 
 • Initialization: The algorithm begins by randomly selecting $k$ data points as the initial centroids (cluster centers). 
