@@ -1,4 +1,4 @@
-# REQUIREMENT
+# Requirement
 
 Build a Small FastAPI Service for K-Means Clustering 
 Cosine + Auto-k Build a Small FastAPI Service for K-Means Clustering (Cosine + Auto-k by Silhouette)

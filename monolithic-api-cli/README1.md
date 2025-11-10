@@ -7,7 +7,7 @@
 - SQL Alchemy (ORM)
 - AioSqLite
 - PyJWT
-- jinja2
+- JinJa2
 - PoeThePoet
 - StructLog
 - Async implementation
